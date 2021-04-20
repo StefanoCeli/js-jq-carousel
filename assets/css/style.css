@@ -4,6 +4,52 @@
     padding: 0;
 }
 .container{
-    background-color: red;
-    margin:200px auto;
+    width: 1000px;
+    margin: 200px auto;
+    position: relative;
+}
+.box i{
+    position: absolute;
+    font-size: 50px;
+    color: #f4ec12;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.box i:first-child{
+    right: 101%;
+}
+.box i:last-child{
+    left: 101%;
+}
+.box img{
+    width: 100%;
+    display: none;
+}
+.box img.active{
+    display: block;
+}
+nav{
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav i{
+margin: 0 15px;
+color: #f4ec12;
+cursor: pointer;
+border-radius: 50%;
+}
+nav i:hover{
+background-color: #fff;
+}
+nav i.active{
+background-color: #f4ec12;
 }
